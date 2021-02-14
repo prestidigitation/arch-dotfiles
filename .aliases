@@ -1,0 +1,11 @@
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias open='xdg-open'
+
+# Prompt before overwriting, when copying
+alias cp='cp -i'
+
+# Prompt before overwriting, when moving or changing name
+alias mv='mv -i'
+alias c='clear'
+alias u='cd ..'
