@@ -5,13 +5,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 # Created by `userpath` on 2020-10-20 22:41:11
 export PATH="$PATH:/home/rowlanda/.local/bin"
 
-# Configure oh-my-zsh
-export ZSH="$HOME/.oh-my-zsh"
-export ZSH_CUSTOM="$DOT/.zsh-custom"
-ZSH_THEME="robbyrussell"
-plugins=(git)
-source $ZSH/oh-my-zsh.sh
-
 # Set dotfiles to arch-dotfiles directory
 DOT=~/arch-dotfiles
 
