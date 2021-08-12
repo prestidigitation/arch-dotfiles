@@ -1,3 +1,7 @@
+-- Setup...
+-- Must create symbolic link in $HOME to satisfy required config location:
+-- ln -s arch-dotfiles/.ghci ~/.ghci
+
 -- Change prompt to bold purple lambda symbol
 :set prompt "\ESC[1;35m\x03BB> \ESC[m"
 :set prompt-cont "\ESC[1;35m > \ESC[m"
@@ -9,4 +13,3 @@
 -- Requires pretty-simple to be installed
 :set -package pretty-simple
 import Text.Pretty.Simple (pPrint)
-
