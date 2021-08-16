@@ -27,6 +27,25 @@ SAVEHIST=1000
 HISTFILE=~/.zsh_history
 HISTTIMEFORMAT="%h %d %H:%M:%S "
 
+# Enable git info in prompt
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+# RPROMPT=\$vcs_info_msg_0_
+zstyle ':vcs_info:git:*' formats '%F{29}%b%f '
+zstyle ':vcs_info:*' enable git
+
+show_branch_symbol() {
+  if (git rev-parse 2> /dev/null)
+  then
+    echo '%F{29}\UE0A0%f '
+  fi
+}
+
+# Prompt info and layout
+PROMPT=$'%B%F{105}%c%f%b $(show_branch_symbol)%B$vcs_info_msg_0_%b%F{220}\$%f '
+# %F{220}\UE0A0%f 
+
 # Load aliases file
 [[ -f "$DOT/.aliases" ]] && source "$DOT/.aliases"
 
