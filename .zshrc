@@ -4,6 +4,8 @@ export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 # Created by `userpath` on 2020-10-20 22:41:11
 export PATH="$PATH:/home/rowlanda/.local/bin"
+# Created by newuser for 5.8
+[ -f "/home/rowlanda/.ghcup/env" ] && source "/home/rowlanda/.ghcup/env" # ghcup-env
 
 # Set dotfiles to arch-dotfiles directory
 DOT=~/arch-dotfiles
